@@ -11,13 +11,27 @@
     <title>Toter.in</title>
     <style>
         .log{
-            border: 4px solid rgb(78, 148, 76);
+            border: 4px solid rgb(248, 252, 248);
             padding-left: 20px;
             padding-right: 20px;
             padding-top: 20px;
             padding-bottom: 30px;
-            background-color: rgb(245, 220, 235);
-            border-radius: 1cm;
+            background-color: rgb(165, 236, 136);
+            border-image:
+            linear-gradient(#f321f3,
+                        #a6d32b,#1130e0) 1;
+                        animation: rotate
+                        2.5s
+                        ease-in
+                        infinite;
+        }
+        @keyframes rotate {
+            50%{ 
+                border-image: linear-gradient(
+                    360deg,
+                    #e72fff,
+                    #a9dd1b,#0a54df) 1;
+            }
         }
         .text{
             margin-bottom: 15px;
@@ -45,7 +59,7 @@
             padding-top: 10px;
         }
         .colr{
-            background-color: rgb(63, 61, 61);
+            background-color: rgb(0, 0, 0);
         }
         a{
              text-decoration: underline;
@@ -71,21 +85,23 @@
  </div> <br>  
 <div class="container-fluid" >
 <div class="container">
-    <b><i><h1 style="color: rgb(140, 33, 129);"></h1></i></b>
+    <b><i><h1 style="color: rgb(45, 165, 81);"></h1></i></b>
 </div>
 <br>
 <div class="container-fluid" >
     <div class="row">
         <div class="col-md-9">
-            <img src="./pngegg.png" width="100%" height="100%">
+         <video width=100% height=100% autoplay>
+            <source src="recycle3.mp4" type="video/mp4">
+         </video>
         </div>
         <div class="col-md-3">
             <div class="log">
             <div class="col-sm-3 padd"><img src="./logo.png" style="height:100px; border-radius: 4cm; " > </div>
-            <h1 style="color:rgb(50,150,60); font-style: italic;">Login</h1>
-            <input class="text" style=border-color:rgb(67,201,55) type="text" placeholder="Enter your Email here.."><br>
-            <input class="text"  style=border-color:rgb(42,175,64) type="text" placeholder ="Enter Password here.."><br>
-            <input class="text"  style=border-color:aqua type="button" style ="color: rgb(161, 10, 129); background-color: rgb(47, 221, 120);"  value="Login" onclick="#"><br>
+            <h1 style="color: rgb(25, 187, 25); font-style: italic;">Login</h1>
+            <input class="text" style=border-color:rgb(229,107,240) type="text" placeholder="Enter your Email here.."><br>
+            <input class="text"  style=border-color:rgb(230,110,200) type="text" placeholder ="Enter Password here.."><br>
+            <input class="text"  style=border-color:aqua type="button" style ="color: rgb(104, 11, 19) background-color: rgb(47, 221, 120);"  value="Login" onclick="#"><br>
             <h7>New user?</h7>
             <h7><a href="#">Click here to Register</a> </h7>
             </div>
@@ -96,7 +112,7 @@
 <div>
     <h2><p style="color:rgb(54, 168, 8);"class="tag">Don't worry..we are here to manage your waste</p></h2>
 </div>
-<div class="container-fluid bg-dark text-light" >
+<div class="container-fluid" style="background-color:rgb(0, 0, 0);" >
     <div class="row" id="bottom">
         <div style="color:rgb(43, 165, 6);" class="col-md-4 offset-md-1">   
             <h3>About Us</h3><br>
